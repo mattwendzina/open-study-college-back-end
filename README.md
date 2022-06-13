@@ -1,6 +1,6 @@
 ## Getting Started
 
-Firstly you will need to add a `.env` file and add the following env-var:
+Firstly you will need to run `npm i` to install all dependencies and then add a `.env` file with the following env-var:
 `MONGO_PASSWORD=xxxxxxxx`
 
 The password should have been sent to you separatley. The IP has been whitelisted to be accessed from anywhere.
