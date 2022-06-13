@@ -61,7 +61,6 @@ router.get("/:courseId", (req, res) => {
     .catch((err) => console.log("ERR", err));
 });
 
-console.log("ADD NEW COURSE");
 router.post("/add-new-course", (req, res) => {
   const { title, price, description, categories } = req.body;
   const newCourse = new Course(title, price, description, categories);

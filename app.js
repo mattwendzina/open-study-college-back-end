@@ -28,7 +28,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/courses", coursesRoutes);
 
 app.get("/", (req, res, next) => {
-  console.log("I'm another middleware");
   res.send("<h1> Hello from Express </h1>");
 });
 

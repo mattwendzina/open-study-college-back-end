@@ -94,10 +94,7 @@ class Course {
     return db
       .collection("courses")
       .deleteOne({ _id: new mongodb.ObjectId(courseId) })
-      .then((result) => {
-        console.log("RESULT", result);
-        return result;
-      })
+      .then((result) => result)
       .catch((err) => console.log("ERR", err));
   }
 }
